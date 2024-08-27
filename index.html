@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <label for "guessname">What language was created to add interactivity to the Web?: <input class="guess" type="text"></input></label>
+        <label for "prefname">Between Vue, React, and jQuery, which code library do you prefer: <input class="pref" type="text"></input></label>
+
+        <script>
+            //I wanted to try to see if I could output user inputs as part of text for it to be natural but I did it wrong when I tried the Backtick method
+            
+            var txtGuess = document.querySelector('.guess');
+            txtGuess.addEventListener('focusout', (event) => alert ("The answer is html. You responded: " + txtGuess.value));
+
+            var txtPref = document.querySelector('.pref');
+            //Tried to do this command with the ticks instead but it came out printing "${txtPref.value}" so must have done something wrong
+            txtPref.addEventListener('focusout', (event) => alert("It looks like your preffered code library is: " + txtPref.value));
+        </script>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
